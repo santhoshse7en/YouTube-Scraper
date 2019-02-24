@@ -1,14 +1,13 @@
-# YouTube-Scraper
+YouTube-Scraper
+------------------------------------------------------------
 This script scrapes YouTube details and return a json output
 
-# Python library dependencies
->BeautifulSoup
+Python library dependencies
+------------------------------------------------------------
+    > BeautifulSoup
+    > Requests
+    > Json
 
->request
-
->json
-
-
-# Usage
-
-python main.py 
+Usage
+------------------------------------------------------------
+    > python main.py
