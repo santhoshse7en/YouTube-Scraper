@@ -1,13 +1,15 @@
 YouTube-Scraper
 ------------------------------------------------------------
 This script scrapes YouTube details like
-    -> Channel Name
-    -> Subscriber Count
-    -> Published Date
-    -> Views
-    -> Likes
-    -> Dislikes
-and return a json output
+
+    * Channel Name
+    * Subscriber Count
+    * Published Date
+    * Views
+    * Likes
+    * Dislikes
+    
+and finally return the output in json format
 
 Python library dependencies
 ------------------------------------------------------------
