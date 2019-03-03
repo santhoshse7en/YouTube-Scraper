@@ -1,9 +1,15 @@
 from bs4 import BeautifulSoup
 from requests import get
+import argparse
 import json
 
-url, obj = input('Enter the url'), []
-res = get(url).text
+parser = argparse.ArgumentParser(add_help=False, description=('Download reviews from BookMyShow'))
+parser.add_argument('--help', '-h', action='help', default=argparse.SUPPRESS, help='Show this help message and exit')
+parser.add_argument('--youtube_url', '-yt', help='Enter Url extract reviews')
+args = parser.parse_args()
+
+obj = []
+res = get(args.youtube_url).text
 soup = BeautifulSoup(res, 'lxml')
 
 channel_name = soup.select_one('.yt-user-info').getText().strip()
@@ -14,7 +20,6 @@ views = round(int(''.join(i for i in soup.select_one('.watch-view-count').text i
 likes = int(''.join(i for i in soup.select_one('button[title="I like this"]').get_text() if i.isdigit()))
 dislikes = int(''.join(i for i in soup.select_one('button[title="I dislike this"]').get_text() if i.isdigit()))
 
-obj.append({'Channel_Name' : channel_name, 'Subscribers' : subscribers, 'published_date' : published_date,
-            'Description' : description, 'Views' : views, 'Likes' : likes, 'Dislikes' : dislikes})
-
-print(json.dumps(obj))
+print({'Channel_Name' : channel_name, 'Subscribers' : subscribers,
+'published_date' : published_date, 'Description' : description,
+'Views' : views, 'Likes' : likes, 'Dislikes' : dislikes})
