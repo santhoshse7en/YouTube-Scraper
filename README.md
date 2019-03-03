@@ -15,8 +15,9 @@ Python library dependencies
 ------------------------------------------------------------
     > BeautifulSoup
     > Requests
+    > argparse
     > Json
 
 Usage
 ------------------------------------------------------------
-    > python main.py
+    > python main.py --youtube_url https://www.youtube.com/watch?v=IRbuo1bwOoc
