@@ -16,7 +16,6 @@ Python library dependencies
     > BeautifulSoup
     > Requests
     > argparse
-    > Json
 
 Usage
 ------------------------------------------------------------
