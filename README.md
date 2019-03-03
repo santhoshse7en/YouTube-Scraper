@@ -1,6 +1,6 @@
 YouTube-Scraper
 ------------------------------------------------------------
-This script scrapes YouTube details like
+This python script scrape the YouTube details as follows like
 
     * Channel Name
     * Subscribers Count
@@ -9,7 +9,7 @@ This script scrapes YouTube details like
     * Likes
     * Dislikes
     
-and finally, returns the output in json format
+and finally, returns the output in dictionary format
 
 Python library dependencies
 ------------------------------------------------------------
