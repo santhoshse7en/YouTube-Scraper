@@ -26,3 +26,7 @@ Download it by clicking the green download button here on Github. You only need 
 or
 
     > python main.py -yt https://www.youtube.com/watch?v=IRbuo1bwOoc
+
+Output
+======
+![capture](https://user-images.githubusercontent.com/47944792/53887560-8f72d000-4048-11e9-9875-6aa58589c2ab.PNG)
