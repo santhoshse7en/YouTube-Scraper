@@ -20,7 +20,8 @@ Dependencies
 Usage
 =====
 Download it by clicking the green download button here on Github. You only need to parse argument of YouTube URL.
-    > python main.py --youtube_url https://www.youtube.com/watch?v=IRbuo1bwOoc
+
+    > python main.py -youtube_url https://www.youtube.com/watch?v=IRbuo1bwOoc
 
 or
 
