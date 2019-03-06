@@ -8,7 +8,6 @@ parser.add_argument('--help', '-h', action='help', default=argparse.SUPPRESS, he
 parser.add_argument('--youtube_url', '-yt', help='Enter Url extract reviews')
 args = parser.parse_args()
 
-obj = []
 res = get(args.youtube_url).text
 soup = BeautifulSoup(res, 'lxml')
 
