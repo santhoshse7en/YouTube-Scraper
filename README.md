@@ -1,5 +1,5 @@
 YouTube-Scraper
-------------------------------------------------------------
+===============
 This python script scrape the YouTube details as follows like
 
     * Channel Name
@@ -11,14 +11,14 @@ This python script scrape the YouTube details as follows like
     
 and finally, returns the output in dictionary format
 
-Python library dependencies
-------------------------------------------------------------
+Dependencies
+============
     > BeautifulSoup
     > Requests
     > argparse
 
 Usage
-------------------------------------------------------------
+=====
     > python main.py --youtube_url https://www.youtube.com/watch?v=IRbuo1bwOoc
     
                                     or
