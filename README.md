@@ -20,7 +20,7 @@ Dependencies
 Usage
 =====
     > python main.py --youtube_url https://www.youtube.com/watch?v=IRbuo1bwOoc
-    
-                                    or
-    
+
+or
+
     > python main.py -yt https://www.youtube.com/watch?v=IRbuo1bwOoc
