@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup
 from requests import get
 import argparse
-import json
+import pprint
 
 parser = argparse.ArgumentParser(add_help=False, description=('Download reviews from BookMyShow'))
 parser.add_argument('--help', '-h', action='help', default=argparse.SUPPRESS, help='Show this help message and exit')
@@ -20,6 +20,6 @@ views = round(int(''.join(i for i in soup.select_one('.watch-view-count').text i
 likes = int(''.join(i for i in soup.select_one('button[title="I like this"]').get_text() if i.isdigit()))
 dislikes = int(''.join(i for i in soup.select_one('button[title="I dislike this"]').get_text() if i.isdigit()))
 
-print({'Channel_Name' : channel_name, 'Subscribers' : subscribers,
+pprint.pprint({'Channel_Name' : channel_name, 'Subscribers' : subscribers,
 'published_date' : published_date, 'Description' : description,
 'Views' : views, 'Likes' : likes, 'Dislikes' : dislikes})
